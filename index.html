@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2025秋《结构化学》趣味化课程表</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #111111;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --table-border: #e5e7eb;
+      --header-bg: #f8fafc;
+      --row-alt: #fafafa;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0f17;
+        --fg: #f1f5f9;
+        --muted: #94a3b8;
+        --accent: #60a5fa;
+        --table-border: #243244;
+        --header-bg: #0f172a;
+        --row-alt: #0c1423;
+      }
+    }
+    html, body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 16px 60px;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0 0 8px;
+    }
+    .sub {
+      color: var(--muted);
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+    .toolbar {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 10px 0 16px;
+    }
+    input[type="search"] {
+      flex: 1;
+      min-width: 240px;
+      padding: 10px 12px;
+      border: 1px solid var(--table-border);
+      background: transparent;
+      color: var(--fg);
+      border-radius: 8px;
+      outline: none;
+    }
+    .tip {
+      font-size: 12px;
+      color: var(--muted);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--table-border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    thead tr {
+      background: var(--header-bg);
+    }
+    th, td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--table-border);
+      text-align: left;
+      vertical-align: top;
+    }
+    tbody tr:nth-child(odd) {
+      background: var(--row-alt);
+    }
+    .wk {
+      width: 56px;
+      font-variant-numeric: tabular-nums;
+    }
+    .date, .time {
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+    .chapter {
+      color: var(--accent);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .fun {
+      font-weight: 600;
+    }
+    .foot {
+      margin-top: 18px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>2025秋《结构化学》趣味化课程表</h1>
+    <div class="sub">每周二(3-4节) & 周四(1-2节) · 共17周 · 更新于 <!-- build time --> </div>
+    <div class="toolbar">
+      <input id="q" type="search" placeholder="搜索：周次 / 日期 / 时间 / 章节 / 主题（例如：NMR、VSEPR、项目）">
+      <div class="tip">提示：按 <kbd>Ctrl</kbd>+<kbd>F</kbd> 也可浏览器内查找</div>
+    </div>
+    <table id="tbl">
+      <thead>
+        <tr>
+          <th class="wk">周次</th>
+          <th class="date">日期</th>
+          <th class="time">时间</th>
+          <th>章节/项目</th>
+          <th>趣味主题</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="wk">1</td><td class="date">2025-09-02</td><td class="time">周二(3-4节)</td><td class="chapter">绪论+第1章</td><td class="fun">原子里的小宇宙：电子的排队规则</td></tr>
+        <tr><td class="wk">1</td><td class="date">2025-09-04</td><td class="time">周四(1-2节)</td><td class="chapter">第2章</td><td class="fun">分子的空间舞蹈：VSEPR模型速成</td></tr>
+        <tr><td class="wk">2</td><td class="date">2025-09-09</td><td class="time">周二(3-4节)</td><td class="chapter">第3章上</td><td class="fun">化学键的魔术：杂化轨道的故事</td></tr>
+        <tr><td class="wk">2</td><td class="date">2025-09-11</td><td class="time">周四(1-2节)</td><td class="chapter">第3章下</td><td class="fun">分子乐队：成键与反键的合奏</td></tr>
+        <tr><td class="wk">3</td><td class="date">2025-09-16</td><td class="time">周二(3-4节)</td><td class="chapter">第4章</td><td class="fun">配合物的色彩密码：晶体场理论</td></tr>
+        <tr><td class="wk">3</td><td class="date">2025-09-18</td><td class="time">周四(1-2节)</td><td class="chapter">第5章</td><td class="fun">对称之美：分子中的群论世界</td></tr>
+        <tr><td class="wk">4</td><td class="date">2025-09-23</td><td class="time">周二(3-4节)</td><td class="chapter">第6章</td><td class="fun">搭乐高：晶胞与布拉维格子</td></tr>
+        <tr><td class="wk">4</td><td class="date">2025-09-25</td><td class="time">周四(1-2节)</td><td class="chapter">第7章</td><td class="fun">分子的指纹：光谱方法初探</td></tr>
+        <tr><td class="wk">5</td><td class="date">2025-09-30</td><td class="time">周二(3-4节)</td><td class="chapter">第1–2章</td><td class="fun">谁的电子更稳定？构型与成键挑战</td></tr>
+        <tr><td class="wk">5</td><td class="date">2025-10-02</td><td class="time">周四(1-2节)</td><td class="chapter">第3章</td><td class="fun">轨道拼图：MO理论习题</td></tr>
+        <tr><td class="wk">6</td><td class="date">2025-10-07</td><td class="time">周二(3-4节)</td><td class="chapter">第3–4章</td><td class="fun">价键vs轨道：两大理论的对决</td></tr>
+        <tr><td class="wk">6</td><td class="date">2025-10-09</td><td class="time">周四(1-2节)</td><td class="chapter">第4章</td><td class="fun">磁性侦探：配合物的自旋故事</td></tr>
+        <tr><td class="wk">7</td><td class="date">2025-10-14</td><td class="time">周二(3-4节)</td><td class="chapter">第5章</td><td class="fun">对称挑战赛：群论习题训练</td></tr>
+        <tr><td class="wk">7</td><td class="date">2025-10-16</td><td class="time">周四(1-2节)</td><td class="chapter">第6章</td><td class="fun">晶体中的数学游戏：晶胞计算</td></tr>
+        <tr><td class="wk">8</td><td class="date">2025-10-21</td><td class="time">周二(3-4节)</td><td class="chapter">第6章</td><td class="fun">晶体家族谱：14种布拉维格子</td></tr>
+        <tr><td class="wk">8</td><td class="date">2025-10-23</td><td class="time">周四(1-2节)</td><td class="chapter">第7章</td><td class="fun">红外探秘：分子的震动之歌</td></tr>
+        <tr><td class="wk">9</td><td class="date">2025-10-28</td><td class="time">周二(3-4节)</td><td class="chapter">第7章</td><td class="fun">化学家的听诊器：核磁共振NMR</td></tr>
+        <tr><td class="wk">9</td><td class="date">2025-10-30</td><td class="time">周四(1-2节)</td><td class="chapter">第7章</td><td class="fun">分子碎片谜案：质谱与复习</td></tr>
+        <tr><td class="wk">10</td><td class="date">2025-11-04</td><td class="time">周二(3-4节)</td><td class="chapter">项目1</td><td class="fun">晶体大冒险：用VESTA看世界</td></tr>
+        <tr><td class="wk">10</td><td class="date">2025-11-06</td><td class="time">周四(1-2节)</td><td class="chapter">项目2</td><td class="fun">配合物侦探：结构与性质的推理</td></tr>
+        <tr><td class="wk">11</td><td class="date">2025-11-11</td><td class="time">周二(3-4节)</td><td class="chapter">项目准备</td><td class="fun">小组作战：项目汇报倒计时</td></tr>
+        <tr><td class="wk">11</td><td class="date">2025-11-13</td><td class="time">周四(1-2节)</td><td class="chapter">项目答辩</td><td class="fun">谁是最佳研究者？小组答辩赛</td></tr>
+        <tr><td class="wk">12</td><td class="date">2025-11-18</td><td class="time">周二(3-4节)</td><td class="chapter">复习</td><td class="fun">能级与自旋：MO/CFT再挑战</td></tr>
+        <tr><td class="wk">12</td><td class="date">2025-11-20</td><td class="time">周四(1-2节)</td><td class="chapter">复习</td><td class="fun">晶胞与晶体：空间中的计算游戏</td></tr>
+        <tr><td class="wk">13</td><td class="date">2025-11-25</td><td class="time">周二(3-4节)</td><td class="chapter">复习</td><td class="fun">分子指纹再现：光谱解析强化训练</td></tr>
+        <tr><td class="wk">13</td><td class="date">2025-11-27</td><td class="time">周四(1-2节)</td><td class="chapter">研讨</td><td class="fun">材料的奇幻世界：石墨烯与超导</td></tr>
+        <tr><td class="wk">14</td><td class="date">2025-12-02</td><td class="time">周二(3-4节)</td><td class="chapter">研讨</td><td class="fun">学生研究秀场（1）：我的结构化学发现</td></tr>
+        <tr><td class="wk">14</td><td class="date">2025-12-04</td><td class="time">周四(1-2节)</td><td class="chapter">研讨</td><td class="fun">学生研究秀场（2）：我的结构化学发现</td></tr>
+        <tr><td class="wk">15</td><td class="date">2025-12-09</td><td class="time">周二(3-4节)</td><td class="chapter">模拟考</td><td class="fun">限时挑战：模拟试卷（上）</td></tr>
+        <tr><td class="wk">15</td><td class="date">2025-12-11</td><td class="time">周四(1-2节)</td><td class="chapter">模拟考</td><td class="fun">限时挑战：模拟试卷（下）</td></tr>
+        <tr><td class="wk">16</td><td class="date">2025-12-16</td><td class="time">周二(3-4节)</td><td class="chapter">答疑</td><td class="fun">错题诊所：高频题型深度解析</td></tr>
+        <tr><td class="wk">16</td><td class="date">2025-12-18</td><td class="time">周四(1-2节)</td><td class="chapter">答疑</td><td class="fun">临考加油站：个性化辅导</td></tr>
+        <tr><td class="wk">17</td><td class="date">2025-12-23</td><td class="time">周二(3-4节)</td><td class="chapter">期末复盘</td><td class="fun">一张图看懂结构化学全景</td></tr>
+        <tr><td class="wk">17</td><td class="date">2025-12-25</td><td class="time">周四(1-2节)</td><td class="chapter">期末考核</td><td class="fun">最终挑战：期末考试与评估</td></tr>
+      </tbody>
+    </table>
+    <div class="foot">
+      使用说明：本页为静态HTML文件，无需外部依赖；可直接托管在 GitHub Pages / Gitee Pages。支持系统深浅色；移动端自适应显示。
+    </div>
+  </div>
+  <script>
+    const q = document.getElementById('q');
+    const tbl = document.getElementById('tbl');
+    const rows = Array.from(tbl.tBodies[0].rows);
+    q.addEventListener('input', () => {
+      const s = q.value.trim().toLowerCase();
+      rows.forEach(tr => {
+        const show = Array.from(tr.cells).some(td => td.textContent.toLowerCase().includes(s));
+        tr.style.display = show ? '' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
